@@ -12,6 +12,8 @@
 # Run 11a_export_for_scvelo.R first to generate the Seurat exports.
 # ==============================================================================
 
+import matplotlib
+matplotlib.use('Agg')
 import numpy as np
 import anndata
 import scanpy
@@ -99,6 +101,9 @@ def run_scvelo(adata, name, umap_cord, sample_obs, cell_clusters, palette, out_d
     scv.pp.moments(adata, n_pcs=30, n_neighbors=30)
     scv.tl.velocity(adata, mode="stochastic")
     scv.tl.velocity_graph(adata)
+
+    # Set scVelo figure directory to /results
+    scv.settings.figdir = out_dir
 
     # Save as PDF
     scv.pl.velocity_embedding_stream(
