@@ -5,7 +5,7 @@
 # Input:  10X Cell Ranger filtered matrices (LSEC-B1 through LSEC-B5)
 # Output: LSECfiltered.RData — merged, QC-filtered Seurat object
 #
-# Figures: QC plots
+# Figures: QC plots (supplementary)
 # ==============================================================================
 
 library(Seurat)

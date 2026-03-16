@@ -32,7 +32,8 @@ RUN R -e " \
   install.packages(c( \
     'Seurat', 'SeuratObject', 'remotes', 'dplyr', 'tibble', 'stringr', \
     'ggplot2', 'cowplot', 'patchwork', 'ggrepel', 'ggalluvial', \
-    'circlize', 'scales', 'reticulate' \
+    'circlize', 'scales', 'reticulate', 'pheatmap', 'ggpubr', \
+    'lazyeval', 'gtable' \
   ), repos='https://cloud.r-project.org') \
 "
 
@@ -44,9 +45,14 @@ RUN R -e " \
     'presto', 'ComplexHeatmap', \
     'clusterProfiler', 'org.Hs.eg.db', \
     'glmGamPoi', 'MAST', 'GSVA', \
-    'pcaMethods' \
+    'pcaMethods', 'DESeq2', 'apeglm', 'tximport' \
   ), ask=FALSE, update=FALSE) \
 "
 
 # SeuratWrappers from GitHub
 RUN R -e "remotes::install_github('satijalab/seurat-wrappers')"
+
+# mobaseq package (bundled locally in environment/mobaseq/)
+# To prepare: download the package source and place in environment/mobaseq/
+COPY mobaseq/ /tmp/mobaseq/
+RUN R -e "install.packages('/tmp/mobaseq', repos=NULL, type='source')"
