@@ -7,10 +7,7 @@ SCLC metastatic seeding
 
 ## Overview
 
-This capsule contains the code to reproduce the scRNA-seq and bulk RNA-seq
-analyses and figures presented in Figure 1 of the manuscript. Human liver
-sinusoidal endothelial cells (LSECs) were profiled by 10X Chromium scRNA-seq
-and bulk RNA-seq under monoculture and coculture conditions with SCLC cells.
+This capsule contains the code to reproduce the computational analyses and figures presented in the manuscript. Analyses span scRNA-seq and bulk RNA-seq of human liver sinusoidal endothelial cells (LSECs) under monoculture and coculture conditions with SCLC cells (Figure 1), MOBA-seq barcode tracing of CXCR2 knockout metastatic dynamics in RP48 and H82 SCLC models (Figure 3), Rac1 knockout metastatic analysis (Figure 5), and CXCR2 pharmacological inhibition with AZD5069 (Figure 6).
 
 ## Pipeline Structure
 
