@@ -50,8 +50,16 @@ echo "[9/10] MOBA-seq Rac1 analysis..."
 Rscript code/09_mobaseq_rac1.R
 
 # Step 10: MOBA-seq CXCR2 inhibitor analysis (Figure 6l-n)
-echo "[10/10] MOBA-seq CXCR2 inhibitor analysis..."
+echo "[10/12] MOBA-seq CXCR2 inhibitor analysis..."
 Rscript code/10_mobaseq_cxcr_inhibitor.R
+
+# Step 11a: Export Seurat data for scVelo
+echo "[11/12] Exporting Seurat data for scVelo..."
+Rscript code/11a_export_for_scvelo.R
+
+# Step 11b: RNA velocity with scVelo (Figure 1d)
+echo "[12/12] Running scVelo RNA velocity..."
+python code/11b_scvelo.py
 
 echo "============================================="
 echo "Pipeline complete. Results in /results/"

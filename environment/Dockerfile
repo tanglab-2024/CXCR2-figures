@@ -4,7 +4,7 @@
 #             in SCLC metastatic seeding (CD-26-0546)
 # ==============================================================================
 
-FROM rocker/r-ver:4.3.2
+FROM registry.codeocean.com/codeocean/r-base:4.3.2-ubuntu22.04
 
 # System dependencies for R packages
 RUN apt-get update && apt-get install -y --no-install-recommends \

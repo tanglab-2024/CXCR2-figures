@@ -7,7 +7,13 @@ SCLC metastatic seeding
 
 ## Overview
 
-This capsule contains the code to reproduce the computational analyses and figures presented in the manuscript. Analyses span scRNA-seq and bulk RNA-seq of human liver sinusoidal endothelial cells (LSECs) under monoculture and coculture conditions with SCLC cells (Figure 1), MOBA-seq barcode tracing of CXCR2 knockout metastatic dynamics in RP48 and H82 SCLC models (Figure 3), Rac1 knockout metastatic analysis (Figure 5), and CXCR2 pharmacological inhibition with AZD5069 (Figure 6).
+This capsule contains the code to reproduce the computational analyses and
+figures presented in the manuscript. Analyses span scRNA-seq and bulk RNA-seq
+of human liver sinusoidal endothelial cells (LSECs) under monoculture and
+coculture conditions with SCLC cells (Figure 1), MOBA-seq barcode tracing
+of CXCR2 knockout metastatic dynamics in RP48 and H82 SCLC models (Figure 3),
+Rac1 knockout metastatic analysis (Figure 5), and CXCR2 pharmacological
+inhibition with AZD5069 (Figure 6).
 
 ## Pipeline Structure
 
@@ -23,6 +29,8 @@ This capsule contains the code to reproduce the computational analyses and figur
 | `08_mobaseq_h82.R` | MOBA-seq H82 cell line analysis + cross-dataset radar | 3i, 3j, 3k, 3l |
 | `09_mobaseq_rac1.R` | MOBA-seq Rac1 KO metastatic dynamics | 5n, 5o, 5p, 5q |
 | `10_mobaseq_cxcr_inhibitor.R` | MOBA-seq CXCR2 inhibitor (AZD) treatment | 6l, 6m, 6n |
+| `11a_export_for_scvelo.R` | Export Seurat metadata for scVelo | — |
+| `11b_scvelo.py` | RNA velocity stream plots (scVelo) | 1d |
 
 ## Data
 
@@ -37,6 +45,13 @@ Place the following in the `data/` directory:
 
 Each directory should contain `barcodes.tsv.gz`, `features.tsv.gz`, and
 `matrix.mtx.gz` from Cell Ranger.
+
+**RNA velocity (velocyto loom files):**
+- `Loomfiles/sample_alignments_B1.loom` — Monoculture
+- `Loomfiles/sample_alignments_B2.loom` — Coculture-1 replicate A
+- `Loomfiles/sample_alignments_B3.loom` — Coculture-1 replicate B
+- `Loomfiles/sample_alignments_B4.loom` — Coculture-2 replicate A
+- `Loomfiles/sample_alignments_B5.loom` — Coculture-2 replicate B
 
 **Bulk RNA-seq:**
 - `20200123_H82-LSEC_Normalized_Counts.txt` — normalized count matrix
@@ -60,7 +75,7 @@ GitHub repository and place the unzipped package folder there.
 bash code/run.sh
 ```
 
-All outputs are written to `results/`.
+All outputs are written to `/results/`.
 
 ## Environment
 
@@ -69,4 +84,4 @@ All outputs are written to `results/`.
 
 ## Contact
 
-Andy Xu, xu.a@wustl.edu
+[Your name and email]
