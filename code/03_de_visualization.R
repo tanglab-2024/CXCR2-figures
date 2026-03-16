@@ -21,7 +21,7 @@ library(ComplexHeatmap)
 library(circlize)
 library(patchwork)
 
-out_dir <- "../results"
+out_dir <- "/results"
 subLSEC <- readRDS(file.path(out_dir, "subLSEC.rds"))
 
 # ==============================================================================

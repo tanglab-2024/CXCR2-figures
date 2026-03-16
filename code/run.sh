@@ -54,5 +54,5 @@ echo "[10/10] MOBA-seq CXCR2 inhibitor analysis..."
 Rscript code/10_mobaseq_cxcr_inhibitor.R
 
 echo "============================================="
-echo "Pipeline complete. Results in ../results/"
+echo "Pipeline complete. Results in /results/"
 echo "============================================="

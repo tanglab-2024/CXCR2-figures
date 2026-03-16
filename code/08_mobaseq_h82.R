@@ -18,8 +18,8 @@ library(mobaseq)
 library(dplyr)
 library(ggplot2)
 
-out_dir  <- "../results"
-data_dir <- "../data"
+out_dir  <- "/results"
+data_dir <- "/data"
 
 # ==============================================================================
 # 1. Load and filter H82 MOBA-seq data

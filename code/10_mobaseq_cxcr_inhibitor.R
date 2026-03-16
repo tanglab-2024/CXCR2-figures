@@ -15,8 +15,8 @@ library(dplyr)
 library(stringr)
 library(ggplot2)
 
-out_dir  <- "../results"
-data_dir <- "../data"
+out_dir  <- "/results"
+data_dir <- "/data"
 
 # ==============================================================================
 # 1. Load and annotate CXCR inhibitor MOBA-seq data

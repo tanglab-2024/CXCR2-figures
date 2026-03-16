@@ -15,7 +15,7 @@ library(SingleCellExperiment)
 library(celldex)
 library(ggplot2)
 
-out_dir <- "../results"
+out_dir <- "/results"
 load(file.path(out_dir, "LSECfiltered.RData"))
 
 # --- 1. Normalize and cluster full dataset ------------------------------------

@@ -16,8 +16,8 @@ library(pheatmap)
 library(grid)
 library(gtable)
 
-out_dir <- "../results"
-data_dir <- "../data"
+out_dir <- "/results"
+data_dir <- "/data"
 
 # --- Helper: add flagged labels to pheatmap -----------------------------------
 # Displays only selected row labels with connector lines (for dense heatmaps)

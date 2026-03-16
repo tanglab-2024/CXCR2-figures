@@ -15,7 +15,7 @@ library(ggplot2)
 library(ggrepel)
 library(scales)
 
-out_dir <- "../results"
+out_dir <- "/results"
 
 # --- 1. Load bulk RNA-seq DE results ------------------------------------------
 message("Loading bulk DE results...")

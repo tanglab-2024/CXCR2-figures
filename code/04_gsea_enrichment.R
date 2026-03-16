@@ -12,7 +12,7 @@ library(escape)
 library(msigdbr)
 library(ggplot2)
 
-out_dir <- "../results"
+out_dir <- "/results"
 subLSEC <- readRDS(file.path(out_dir, "subLSEC.rds"))
 
 # --- 1. Convert to SingleCellExperiment ---------------------------------------

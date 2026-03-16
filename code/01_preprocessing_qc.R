@@ -14,8 +14,8 @@ library(stringr)
 library(ggplot2)
 
 # --- Paths -------------------------------------------------------------------
-data_dir <- "../data"
-out_dir  <- "../results"
+data_dir <- "/data"
+out_dir  <- "/results"
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 
 # --- 1. Load 10X matrices ----------------------------------------------------
