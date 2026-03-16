@@ -72,4 +72,4 @@ All outputs are written to `results/`.
 
 ## Contact
 
-[Your name and email]
+Andy Xu, xu.a@wustl.edu
